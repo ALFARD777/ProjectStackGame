@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Проект</title>
+    <link rel="stylesheet" href="web.css">
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r124/three.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/cannon.js/0.6.2/cannon.min.js"></script>
+    <script defer src="index.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: bold;
+            height: 100vh;
+        }
+
+        header {
+            background-color: #121212;
+            height: 10%;
+            color: white;
+            position: absolute;
+            width: 100%;
+        }
+
+        header ul {
+            display: flex;
+            height: 100%;
+        }
+
+        header ul li,
+        header ul a {
+            list-style: none;
+            margin: auto;
+        }
+
+        .secondaryLi {
+            background-color: #121212;
+            padding: 15px;
+            border-radius: 10px;
+            transition: 1s;
+        }
+        .secondaryLi:hover {
+            background-color: #292929;
+            padding: 15px;
+            border-radius: 10px;
+            transition: 0.5s;
+        }
+
+        header ul :nth-child(3) {
+            background-color: #008925;
+            padding: 15px;
+            border-radius: 10px;
+            transition: 1s;
+            box-shadow: none;
+        }
+
+        header ul :nth-child(3):hover {
+            background-color: #00b731;
+            box-shadow: 1px 15px 26px -4px #00b731;
+            -webkit-box-shadow: 1px 15px 26px -4px #00b731;
+            -moz-box-shadow: 1px 15px 26px -4px #00b731;
+            transform: translateY(-5px);
+            transition: 1s;
+        }
+
+        ul a {
+            text-decoration: none;
+            color: #fff;
+        }
+        .black {
+            position: absolute;
+            top: 10%;
+            background-color: black;
+            opacity: 50%;
+            width: 95%;
+            height: 90%;
+        }
+        .title {
+            position: absolute;
+            color: #fff;
+            text-align: center;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <ul>
+            <a href="index.html" class="secondaryLi">
+                <li>Главная</li>
+            </a>
+            <a href="about.html" class="secondaryLi">
+                <li>Об авторе</li>
+            </a>
+            <a href="game.html" class="secondaryLi">
+                <li>Играть</li>
+            </a>
+            <a href="rating.html" class="secondaryLi">
+                <li>Рейтинг</li>
+            </a>
+            <a href="name.html" class="secondaryLi">
+                <li>Авторизация</li>
+            </a>
+        </ul>
+    </header>
+    <div class="black"></div>
+    <div class="title">
+        <h1>
+            Сможешь ли ты построить свой<br>Минск Мир?
+        </h1>
+        <p style="font-weight: normal;">Давай узнаем!</p>
+    </div>
+</body>
+
+</html>
